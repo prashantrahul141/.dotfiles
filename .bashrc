@@ -134,8 +134,9 @@ export NODEJS_PATH="~/.nodejs/node-v18.18.2-linux-x64/bin"
 export NVIM_PATH="~/.nvim/nvim-linux64/bin"
 export BAT_EXTRAS="/home/prashant/Projects/tools/bat-extras"
 export STARSHIP_CONFIG=~/.config/starship.toml
+export GO=/usr/local/go/bin
 
-export PATH="$PATH:$BUN_INSTALL/bin/:$NODEJS_PATH:$NVIM_PATH:$BAT_EXTRAS"
+export PATH="$PATH:$BUN_INSTALL/bin/:$NODEJS_PATH:$NVIM_PATH:$BAT_EXTRAS:$GO"
 
 
 

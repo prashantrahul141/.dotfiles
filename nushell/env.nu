@@ -103,6 +103,8 @@ $env.PATH = ($env.PATH | split row (char esep) | append "~/.nodejs/node-v18.18.2
 $env.PATH = ($env.PATH | split row (char esep) | append "~/.nvim/nvim-linux64/bin")
 $env.PATH = ($env.PATH | split row (char esep) | append "/opt/Clion/bin/")
 $env.PATH = ($env.PATH | split row (char esep) | append "~/Projects/tools/bat-extras")
+$env.PATH = ($env.PATH | split row (char esep) | append "/usr/local/go/bin")
+
 
 # default editor
 $env.EDITOR = "nvim"
