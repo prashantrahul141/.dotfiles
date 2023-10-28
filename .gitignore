@@ -1,0 +1,13 @@
+# Ignore everything
+/*
+
+!.gitignore
+!.ohmyposh.nu
+!.ohmyposh.omp.json
+!.zoxide.nu
+!/alacritty
+!/mpv
+/mpv/watch_later
+!/nushell
+/nushell/history.txt
+!/zellij
