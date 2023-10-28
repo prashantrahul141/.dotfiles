@@ -776,9 +776,7 @@ alias cat = bat
 alias speedtest = speedtest-rs
 alias zl = zellij --config ~/.config/zellij/config.kdl
 alias lg = lazygit
-alias htop = btm
 alias bottom = btm
-alias procs = btm
 alias pipes = pipes.sh -t 3 -r 0 -p 4
 
 # zoxide
