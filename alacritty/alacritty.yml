@@ -115,5 +115,4 @@ shell:
   program: /home/linuxbrew/.linuxbrew/bin/nu
 
 key_bindings:
-  - { key: V, mods: Control, action: Paste }
   - { key: F11, action: ToggleFullscreen }

@@ -97,11 +97,6 @@ family = "CaskaydiaCove Nerd Font"
 style = "Regular"
 
 [[keyboard.bindings]]
-action = "Paste"
-key = "V"
-mods = "Control"
-
-[[keyboard.bindings]]
 action = "ToggleFullscreen"
 key = "F11"
 
