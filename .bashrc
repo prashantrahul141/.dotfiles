@@ -141,6 +141,9 @@ export PATH="$PATH:$BUN_INSTALL/bin/:$NODEJS_PATH:$NVIM_PATH:$BAT_EXTRAS:$GO"
 
 
 # more alias
+alias zp="cd /home/prashant/Projects/"
+alias zd="cd /home/prashant/Desktop/"
+alias zs="cd /home/prashant/Documents/Studies/"
 alias nv=nvim
 alias quit=exit
 alias q=exit
@@ -152,6 +155,11 @@ alias zl="zellij --config ~/.config/zellij/config.kdl"
 alias lg=lazygit
 alias bottom=btm
 alias pipes=pipes.sh
+alias cl=clear
+alias rain=/home/prashant/Projects/tools/rain.sh
+alias bandwhich="sudo /home/prashant/.cargo/bin/bandwhich"
 
 eval "$(zoxide init bash)"
 
+
+cd "/home/prashant/Desktop/"

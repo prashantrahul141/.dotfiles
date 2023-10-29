@@ -772,13 +772,19 @@ alias e = xdg-open
 alias python = python3.12
 alias zp = cd ~/Projects/
 alias zs = cd ~/Studies/
+alias zd = cd ~/Desktop/
 alias cat = bat
 alias speedtest = speedtest-rs
 alias zl = zellij --config ~/.config/zellij/config.kdl
 alias lg = lazygit
 alias bottom = btm
 alias pipes = pipes.sh -t 3 -r 0 -p 4
+alias cl = clear
+alias rain = /home/prashant/Projects/tools/rain.sh
+alias bandwhich = sudo /home/prashant/.cargo/bin/bandwhich
 
 # zoxide
 source ~/.config/.zoxide.nu
 
+# default path 
+cd ~/Desktop/
