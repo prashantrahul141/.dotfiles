@@ -100,6 +100,11 @@ style = "Regular"
 action = "ToggleFullscreen"
 key = "F11"
 
+[[keyboard.bindings]]
+action = "ToggleViMode"
+key = "Space"
+mods = "Control"
+
 [scrolling]
 history = 10000
 multiplier = 3
