@@ -771,9 +771,8 @@ alias q = exit
 alias e = xdg-open
 alias python = python3.12
 alias zp = cd ~/Projects/
-alias zs = cd ~/Studies/
+alias zs = cd ~/Documents/Studies/
 alias zd = cd ~/Desktop/
-alias cat = bat
 alias speedtest = speedtest-rs
 alias zl = zellij --config ~/.config/zellij/config.kdl
 alias lg = lazygit
@@ -782,6 +781,8 @@ alias pipes = pipes.sh -t 3 -r 0 -p 4
 alias cl = clear
 alias rain = /home/prashant/Projects/tools/rain.sh
 alias bandwhich = sudo /home/prashant/.cargo/bin/bandwhich
+alias tm = tmux
+alias rm = trash -v # https://github.com/andreafrancia/trash-cli
 
 # zoxide
 source ~/.config/.zoxide.nu

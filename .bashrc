@@ -149,7 +149,6 @@ alias quit=exit
 alias q=exit
 alias e=xdg-open
 alias python=python3.12
-alias cat=bat
 alias speedtest=speedtest-rs
 alias zl="zellij --config ~/.config/zellij/config.kdl"
 alias lg=lazygit
@@ -158,6 +157,8 @@ alias pipes=pipes.sh
 alias cl=clear
 alias rain=/home/prashant/Projects/tools/rain.sh
 alias bandwhich="sudo /home/prashant/.cargo/bin/bandwhich"
+alias tm=tmux
+alias rm="trash -v" # https://github.com/andreafrancia/trash-cli
 
 eval "$(zoxide init bash)"
 
