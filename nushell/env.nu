@@ -98,13 +98,17 @@ $env.NU_PLUGIN_DIRS = [
 ]
 
 # env
-$env.PATH = ($env.PATH | split row (char esep) | append '~/.bun/bin')
+$env.PATH = ($env.PATH | split row (char esep) | append "/usr/home/prashant/.bun/bin")
 $env.PATH = ($env.PATH | split row (char esep) | append "~/.nodejs/node-v18.18.2-linux-x64/bin")
-$env.PATH = ($env.PATH | split row (char esep) | append "~/.nvim/nvim-linux64/bin")
+# $env.PATH = ($env.PATH | split row (char esep) | append "~/.nvim/nvim-linux64/bin")
 $env.PATH = ($env.PATH | split row (char esep) | append "/opt/Clion/bin/")
 $env.PATH = ($env.PATH | split row (char esep) | append "~/Projects/tools/bat-extras")
 $env.PATH = ($env.PATH | split row (char esep) | append "/usr/local/go/bin")
+$env.PATH = ($env.PATH | split row (char esep) | append "~/Android/Sdk")
+$env.PATH = ($env.PATH | split row (char esep) | append "~/Android/Sdk/emulator")
+$env.PATH = ($env.PATH | split row (char esep) | append "~/Android/Sdk/platform-tools")
 
+$env.ANDROID_HOME = "/home/prashant/Android/Sdk/"
 
 # default editor
 $env.EDITOR = "nvim"
