@@ -25,7 +25,7 @@ font:
   bold_italic:
     family: CaskaydiaCove Nerd Font
     style: Bold Italic
-  size: 9
+  size: 7.8
 draw_bold_text_with_bright_colors: true
 
 selection:
@@ -40,4 +40,4 @@ key_bindings:
 
 # importing colorscheme : https://github.com/alacritty/alacritty-theme
 import:
-  - ~/.config/alacritty/themes/themes/catppuccin.yaml
+  - ~/.config/alacritty/themes/themes/tokyo-night.yaml

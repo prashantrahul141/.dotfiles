@@ -1,10 +1,10 @@
-import = ["/home/prashant/.config/alacritty/themes/themes/catppuccin.toml"]
+import = ["/home/prashant/.config/alacritty/themes/themes/tokyo-night.toml"]
 
 [colors]
 draw_bold_text_with_bright_colors = true
 
 [font]
-size = 9
+size = 7.8
 
 [font.bold]
 family = "CaskaydiaCove Nerd Font"
