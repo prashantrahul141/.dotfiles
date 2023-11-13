@@ -130,14 +130,20 @@ zs () {
 
 # paths 
 export BUN_INSTALL="$HOME/.bun"
-export NODEJS_PATH="~/.nodejs/node-v18.18.2-linux-x64/bin"
+export PATH="$PATH:$BUN_INSTALL/bin/"
+
+export NODEJS_PATH="~/.nodejs/node-v18.18.2-linux-x64/bin/"
+export node="~/.nodejs/node-v18.18.2-linux-x64/bin/"
+
 export NVIM_PATH="~/.nvim/nvim-linux64/bin"
 export BAT_EXTRAS="/home/prashant/Projects/tools/bat-extras"
 export STARSHIP_CONFIG=~/.config/starship.toml
 export GO=/usr/local/go/bin
+export PATH="$PATH:$NODEJS_PATH:$NVIM_PATH:$BAT_EXTRAS:$GO"
 
-export PATH="$PATH:$BUN_INSTALL/bin/:$NODEJS_PATH:$NVIM_PATH:$BAT_EXTRAS:$GO"
-
+export ANDROID_HOME="/home/prashant//Android/Sdk"
+export PATH="$PATH:$ANDROID_HOME/emulator"
+export PATH="$PATH:$ANDROID_HOME/platform-tools"
 
 
 # more alias
