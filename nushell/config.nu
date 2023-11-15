@@ -787,5 +787,6 @@ alias rm = trash -v # https://github.com/andreafrancia/trash-cli
 # zoxide
 source ~/.config/.zoxide.nu
 
-# default path 
-cd ~/Desktop/
+# neofetch stuff;
+alias neofetch = echo "Use fastfetch or pfetch instead."
+
