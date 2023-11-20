@@ -17,3 +17,5 @@
 ~/.moc
 !/conky
 !/myscripts
+!/tmux
+/tmux/plugins
