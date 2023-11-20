@@ -98,7 +98,7 @@ $env.NU_PLUGIN_DIRS = [
 ]
 
 # env
-$env.PATH = ($env.PATH | split row (char esep) | append "/usr/home/prashant/.bun/bin")
+$env.PATH = ($env.PATH | split row (char esep) | append "/home/prashant/.bun/bin")
 $env.PATH = ($env.PATH | split row (char esep) | append "~/.nodejs/node-v18.18.2-linux-x64/bin")
 # $env.PATH = ($env.PATH | split row (char esep) | append "~/.nvim/nvim-linux64/bin")
 $env.PATH = ($env.PATH | split row (char esep) | append "/opt/Clion/bin/")
