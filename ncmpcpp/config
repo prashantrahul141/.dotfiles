@@ -7,10 +7,15 @@ cyclic_scrolling = "yes"
 statusbar_visibility = "no"
 browser_display_mode = "columns"
 header_visibility = "no"
-startup_screen = "browser"
+titles_visibility = "no"
+
+## Screens available for use: help, playlist, browser, search_engine,
+## media_library, playlist_editor, tag_editor, outputs, visualizer, clock,
+## lyrics, last_fm.
+startup_screen = "visualizer"
 connected_message_on_startup = "no"
 
-# visuzalizer
+# visualizer
 visualizer_look = "●▮"
 
 # Available values: spectrum, wave, wave_filled, ellipse.
