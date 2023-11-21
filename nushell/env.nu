@@ -107,6 +107,7 @@ $env.PATH = ($env.PATH | split row (char esep) | append "/usr/local/go/bin")
 $env.PATH = ($env.PATH | split row (char esep) | append "~/Android/Sdk")
 $env.PATH = ($env.PATH | split row (char esep) | append "~/Android/Sdk/emulator")
 $env.PATH = ($env.PATH | split row (char esep) | append "~/Android/Sdk/platform-tools")
+$env.PATH = ($env.PATH | split row (char esep) | append "~/External-apps/")
 
 $env.ANDROID_HOME = "/home/prashant/Android/Sdk/"
 

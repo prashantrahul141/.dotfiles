@@ -145,6 +145,8 @@ export ANDROID_HOME="/home/prashant//Android/Sdk"
 export PATH="$PATH:$ANDROID_HOME/emulator"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
 
+export PATH="$PATH:~/External-apps/"
+
 
 # more alias
 alias zp="cd /home/prashant/Projects/"
