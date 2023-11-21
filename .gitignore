@@ -20,3 +20,5 @@
 !/tmux
 /tmux/plugins
 !/bat
+!/mpd
+!/ncmpcpp
