@@ -784,6 +784,7 @@ alias bandwhich = sudo /home/prashant/.cargo/bin/bandwhich
 alias tm = tmux
 alias rm = trash -v # https://github.com/andreafrancia/trash-cli
 alias music = ncmpcpp
+alias f = ranger
 
 # zoxide
 source ~/.config/.zoxide.nu
