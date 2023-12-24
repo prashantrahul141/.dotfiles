@@ -42,7 +42,7 @@ save_to_clipboard = false
 program = "/home/linuxbrew/.linuxbrew/bin/nu"
 
 [window]
-opacity = 0.8
+opacity = 1.0
 startup_mode = "Maximized"
 
 [window.class]
