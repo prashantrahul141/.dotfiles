@@ -58,12 +58,7 @@
         <direction>right</direction>
       </action>
     </gesture>
-  
-<gesture type="SWIPE" fingers="4" direction="UP"><action type="GNOME_SHELL"></action></gesture>
-<gesture type="SWIPE" fingers="4" direction="DOWN"><action type="GNOME_SHELL"></action></gesture>
-<gesture type="SWIPE" fingers="4" direction="UP"><action type="GNOME_SHELL"></action></gesture>
-<gesture type="SWIPE" fingers="4" direction="DOWN"><action type="GNOME_SHELL"></action></gesture>
-</application>
+  </application>
   <application name="gimp-2.10">
     <gesture type="PINCH" fingers="2" direction="IN">
       <action type="RUN_COMMAND">
