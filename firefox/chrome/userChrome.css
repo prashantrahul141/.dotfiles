@@ -681,7 +681,9 @@ about:config -> svg.context-properties.content.enabled -> true*/
   opacity: 1;
   visibility: visible !important;
   border-radius: 100% !important;
-  transition: opacity 0.25s ease, visibility 0.25s ease,
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease,
     background-color 0.15s ease !important;
 }
 
@@ -851,7 +853,6 @@ menupopup :-moz-any(menu, menuitem) {
   #context-navigation > .menuitem-iconic[_moz-menuactive] {
     &:not([disabled]) {
       background-color: transparent !important;
-      
     }
     &[disabled] {
       background-color: transparent !important;
@@ -913,22 +914,28 @@ menupopup
   padding-block: 0px !important;
 }
 
-#context-navigation #context-back[disabled="true"] .menu-iconic-left .menu-iconic-icon{
+#context-navigation
+  #context-back[disabled="true"]
+  .menu-iconic-left
+  .menu-iconic-icon {
   opacity: 0.5 !important;
 }
 
-#context-navigation #context-forward[disabled="true"] .menu-iconic-left .menu-iconic-icon{
+#context-navigation
+  #context-forward[disabled="true"]
+  .menu-iconic-left
+  .menu-iconic-icon {
   opacity: 0.5 !important;
 }
 
 #context-navigation > .menuitem-iconic {
-    & > .menu-iconic-left {
-      & > .menu-iconic-icon {
-         width: 42px !important;
-         height: 32px !important;
-      }
+  & > .menu-iconic-left {
+    & > .menu-iconic-icon {
+      width: 42px !important;
+      height: 32px !important;
     }
-  } 
+  }
+}
 /*=====================================================================
 ===================== B O O K M A R K S   B A R =======================
 =====================================================================*/
@@ -1132,7 +1139,9 @@ toolbar
 #urlbar #identity-permission-box {
   opacity: 0 !important;
   margin-inline-start: calc(-16px - 2 * var(--urlbar-icon-padding));
-  transition: margin-inline-start 100ms linear, opacity 200ms linear;
+  transition:
+    margin-inline-start 100ms linear,
+    opacity 200ms linear;
 }
 
 #urlbar #identity-box.notSecureText #identity-icon-box {
@@ -1168,7 +1177,9 @@ toolbar
 #page-action-buttons .urlbar-page-action {
   margin-inline-end: calc(-16px - 2 * var(--urlbar-icon-padding));
   opacity: 0;
-  transition: margin-inline-end 100ms linear, opacity 200ms linear;
+  transition:
+    margin-inline-end 100ms linear,
+    opacity 200ms linear;
 }
 
 #page-action-buttons:hover > .urlbar-page-action,
@@ -1188,9 +1199,10 @@ toolbar
   opacity: 0 !important;
 }
 
-#page-action-buttons:not(:hover) #translations-button[translationsactive="true"]:not([open]) {
-  visibility:collapse !important;
-} 
+#page-action-buttons:not(:hover)
+  #translations-button[translationsactive="true"]:not([open]) {
+  visibility: collapse !important;
+}
 
 /* Create visual dots on both sides */
 /* left side identity-box dots modification */
@@ -1482,6 +1494,6 @@ toolbar
 
 /* Make forward and back buttons smaller  */
 #back-button .toolbarbutton-icon,
-#forward-button .toolbarbutton-icon{
+#forward-button .toolbarbutton-icon {
   padding: 8.5px !important;
 }

@@ -29,7 +29,9 @@
     --firefoxcss-private-search-hover-fill: hsl(275, 13%, 63%);
 
     --firefoxcss-private-search-text: var(--firefoxcss-private-search-fill);
-    --firefoxcss-private-search-text-hover: var(--firefoxcss-private-search-hover-fill);
+    --firefoxcss-private-search-text-hover: var(
+      --firefoxcss-private-search-hover-fill
+    );
     --firefoxcss-private-search-caret: hsl(290, 21%, 80%);
 
     --firefoxcss-private-search-box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
@@ -91,12 +93,14 @@
     --firefoxcss-private-search-top-border: hsla(0, 0%, 100%, 0.45);
     --firefoxcss-private-search-fill: hsl(275, 20%, 65%);
 
-    --firefoxcss-private-search-hover: hsla(276, 20%, 84%, 0.50);
+    --firefoxcss-private-search-hover: hsla(276, 20%, 84%, 0.5);
     --firefoxcss-private-search-border-hover: hsla(0, 0%, 100%, 0.55);
     --firefoxcss-private-search-hover-fill: hsl(275, 20%, 55%);
 
     --firefoxcss-private-search-text: var(--firefoxcss-private-search-fill);
-    --firefoxcss-private-search-text-hover: var(--firefoxcss-private-search-hover-fill);
+    --firefoxcss-private-search-text-hover: var(
+      --firefoxcss-private-search-hover-fill
+    );
     --firefoxcss-private-search-caret: hsl(276, 20%, 40%);
 
     --firefoxcss-private-search-box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.015),
@@ -123,7 +127,7 @@
     --firefoxcss-customize-menu: hsla(240, 10%, 90%, 0.25);
     --firefoxcss-customize-menu-bg-image: none;
     --firefoxcss-customize-menu-dropdown: #fdfdfd80;
-    --firefoxcss-input-focus: black;  /*  no changes */
+    --firefoxcss-input-focus: black; /*  no changes */
     --firefoxcss-shortcut-item-active: hsla(240, 15%, 85%, 0.4);
     --firefoxcss-shortcut-item-context-menu: hsla(0, 0%, 95%, 0.4);
     --firefoxcss-shortcut-item-context-menu-border: hsla(0, 0%, 100%, 0.5);
@@ -162,7 +166,9 @@ body {
     border-radius: 10px 10px 10px 10px !important;
     fill: var(--firefoxcss-private-search-fill) !important;
     box-shadow: var(--firefoxcss-private-search-box-shadow) !important;
-    transition: background-color 100ms ease-in, border-color 100ms ease-in,
+    transition:
+      background-color 100ms ease-in,
+      border-color 100ms ease-in,
       fill 100ms ease-in !important;
     backdrop-filter: blur(24px) !important;
   }
@@ -178,12 +184,14 @@ body {
   #search-handoff-button .fake-textbox {
     color: var(--firefoxcss-private-search-text) !important;
     opacity: 0.8 !important;
-    transition: color 100ms ease-in, opacity 100ms ease-in !important;
+    transition:
+      color 100ms ease-in,
+      opacity 100ms ease-in !important;
   }
 
-  #search-handoff-button:active>.fake-textbox,
-  #search-handoff-button:hover>.fake-textbox,
-  #search-handoff-button:focus>.fake-textbox {
+  #search-handoff-button:active > .fake-textbox,
+  #search-handoff-button:hover > .fake-textbox,
+  #search-handoff-button:focus > .fake-textbox {
     color: var(--firefoxcss-private-search-text-hover) !important;
   }
 
@@ -217,7 +225,6 @@ body {
 
 @-moz-document url("about:home"),
 url("about:newtab") {
-
   body {
     --newtab-background-color: var(--firefoxcss-main-bg-color) !important;
     background-size: cover !important;
@@ -231,17 +238,13 @@ url("about:newtab") {
 
   .search-wrapper .search-handoff-button {
     appearance: none !important;
-    background-color: var(--firefoxcss-item-bg-color) !important;
+    background-color: transparent !important;
     color: var(--firefoxcss-search-color) !important;
     border: none !important;
     box-shadow: none !important;
-    border-top: 1px solid var(--firefoxcss-search-border-top-color) !important;
-    border-radius: 10px !important;
-    backdrop-filter: blur(24px) !important;
-    box-shadow: var(--firefoxcss-search-box-shadow) !important;
+    outline: rgb(87, 87, 87, 0.3) solid 1px !important;
+    border-radius: 5px !important;
     fill: var(--firefoxcss-search-text-fill) !important;
-    transition: background-color 250ms ease, border-color 250ms ease,
-      fill 250ms ease !important;
     padding-inline-start: 48px !important;
   }
 
@@ -254,24 +257,8 @@ url("about:newtab") {
   }
 
   .body-wrapper .tile {
-    background-color: var(--firefoxcss-item-bg-color) !important;
-    border-top: 1px solid var(--firefoxcss-shortcut-item-top-border) !important;
-    box-shadow: var(--firefoxcss-shortcut-item-box-shadow) !important;
-    transition: background-color 250ms ease, border-color 250ms ease !important;
-    border-radius: 10px !important;
-  }
-
-  .body-wrapper .top-site-button:hover .tile {
-    /* background-color: rgba(230, 230, 230, 0.15) !important; */
-    background-color: var(--firefoxcss-item-hover-bg-color) !important;
-    border-top: 1px solid var(--firefoxcss-shortcut-item-top-border-hover) !important;
-  }
-
-  .body-wrapper .top-site-button:focus-visible .tile {
-    /* background-color: rgba(230, 230, 230, 0.15) !important; */
-    background-color: var(--firefoxcss-item-hover-bg-color) !important;
-    border-top: 1px solid var(--firefoxcss-shortcut-item-top-border-hover) !important;
-    outline: 1px solid #e3b686a3 !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
   }
 
   #root .customize-menu {
@@ -291,10 +278,6 @@ url("about:newtab") {
   .top-site-outer .search-topsite {
     backdrop-filter: blur(8px) !important;
     background-color: var(--firefoxcss-shortcut-search-icon-color) !important;
-  }
-
-  .search-wrapper input:focus {
-    color: var(--firefoxcss-input-focus) !important;
   }
 
   .top-site-outer .top-site-button .title {
@@ -350,9 +333,10 @@ url("about:newtab") {
     border-radius: 8px !important;
   }
 
-  .top-site-outer .context-menu>ul>li.separator,
-  .card-outer .context-menu>ul>li.separator {
-    border-bottom: 1px solid var(--firefoxcss-shortcut-item-context-menu-separator) !important;
+  .top-site-outer .context-menu > ul > li.separator,
+  .card-outer .context-menu > ul > li.separator {
+    border-bottom: 1px solid
+      var(--firefoxcss-shortcut-item-context-menu-separator) !important;
   }
 
   .search-wrapper .search-handoff-button input {
@@ -434,7 +418,10 @@ url("about:newtab") {
     top: 0 !important;
   }
 
-  .outer-wrapper.fixed-search .search-wrapper .search-inner-wrapper button.search-handoff-button {
+  .outer-wrapper.fixed-search
+    .search-wrapper
+    .search-inner-wrapper
+    button.search-handoff-button {
     backdrop-filter: blur(22px) !important;
     background-color: var(--firefoxcss-extra-search-bar-when-scroll) !important;
     box-shadow: none !important;
@@ -444,20 +431,13 @@ url("about:newtab") {
 
   .search-wrapper .search-handoff-button .fake-textbox {
     opacity: 0.5 !important;
-    color: var(--firefoxcss-search-bar-text-color) !important;
     transition: opacity 0.4s !important;
   }
 
-  .search-wrapper .search-handoff-button:active>.fake-textbox,
-  .search-wrapper .search-handoff-button:hover>.fake-textbox,
-  .search-wrapper .search-handoff-button:focus>.fake-textbox {
+  .search-wrapper .search-handoff-button:active > .fake-textbox,
+  .search-wrapper .search-handoff-button:hover > .fake-textbox,
+  .search-wrapper .search-handoff-button:focus > .fake-textbox {
     opacity: 0.8 !important;
-  }
-
-  .search-inner-wrapper:hover .search-handoff-button {
-    background-color: var(--firefoxcss-item-hover-bg-color) !important;
-    border-top: 1px solid var(--firefoxcss-shortcut-item-top-border-hover) !important;
-    fill: var(--firefoxcss-search-bar-fill-icon-hover) !important;
   }
 
   .collapsible-section .card-outer {
@@ -501,7 +481,7 @@ url("about:newtab") {
     max-width: 80rem !important;
   }
 
-  body>main {
+  body > main {
     grid-template-columns: 1fr !important;
   }
 
@@ -525,8 +505,7 @@ url("about:newtab") {
 }
 
 @-moz-document url("about:blank") {
-
-/*   html:not(#ublock0-epicker),
+  /*   html:not(#ublock0-epicker),
   html:not(#ublock0-epicker) body, */
   #newtab-customize-overlay {
     background-color: var(--firefoxcss-main-bg-color) !important;
