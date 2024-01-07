@@ -40,4 +40,4 @@ key_bindings:
 
 # importing colorscheme : https://github.com/alacritty/alacritty-theme
 import:
-  - ~/.config/alacritty/themes/themes/tokyo-night.yaml
+  - ~/.config/alacritty/themes/themes/gruvbox_dark.yaml
