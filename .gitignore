@@ -25,3 +25,6 @@
 !/firefox
 !/wezterm
 !/touchegg
+!/dconf
+/dconf/user
+!/dconf/backup
